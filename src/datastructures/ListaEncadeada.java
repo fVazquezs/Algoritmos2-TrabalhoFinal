@@ -85,7 +85,7 @@ public class ListaEncadeada<T> {
 	 	ListaEncadeada lista = new ListaEncadeada<Aluno>();
 	 	int x = 0;
 	 	while(s.hasNext()){
-	 		Aluno a =  new Aluno(x,s.next(), s.next(), s.next(), s.next(), s.next(), s.next(), s.next());
+	 		Aluno a =  new Aluno(s.next(), s.next(), s.next(), s.next(), s.next(), s.next(), s.next());
 	 		System.out.println(a);
 	 		if(x == 0){
 	 			lista.addFirst(a);

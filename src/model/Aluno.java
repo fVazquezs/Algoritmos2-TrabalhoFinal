@@ -1,21 +1,19 @@
 package model;
 
 public class Aluno {
-	private static int cont;
-	private static String matricula;
-	private static String nome;
-	private static String email;
-	private static int idade;
-	private static String sexo;
-	private static String empresa;
-	private static String cidade;
+	private String matricula;
+	private String nome;
+	private String email;
+	private int idade;
+	private String sexo;
+	private String empresa;
+	private String cidade;
 		@Override
 	public String toString() {
-		return cont + "Aluno [matricula=" + matricula + ", idade=" + idade + ", email=" + email + ", idade=" + idade + ", sexo=" + sexo
+		return  "Aluno [matricula=" + matricula + ", idade=" + idade + ", email=" + email + ", idade=" + idade + ", sexo=" + sexo
 				+ ", empresa=" + empresa + ", cidade=" + cidade + "]";
 	}
-		public Aluno(int contagem, String matricula, String nome, String email, String idade, String sexo, String empresa, String cidade) {
-			this.cont = contagem;
+		public Aluno(String matricula, String nome, String email, String idade, String sexo, String empresa, String cidade) {
 			this.matricula = matricula;
 			this.nome = nome;
 			this.email = email;
@@ -24,25 +22,25 @@ public class Aluno {
 			this.empresa = empresa;
 			this.cidade = cidade;
 		}
-		public static String getMatricula() {
+		public   String getMatricula() {
 			return matricula;
 		}
-		public static String getNome() {
+		public   String getNome() {
 			return nome;
 		}
-		public static String getEmail() {
+		public   String getEmail() {
 			return email;
 		}
-		public static int getIdade() {
+		public   int getIdade() {
 			return idade;
 		}
-		public static String getSexo() {
+		public   String getSexo() {
 			return sexo;
 		}
-		public static String getEmpresa() {
+		public   String getEmpresa() {
 			return empresa;
 		}
-		public static String getCidade() {
+		public   String getCidade() {
 			return cidade;
 		}
 }
