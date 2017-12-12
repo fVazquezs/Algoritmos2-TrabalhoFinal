@@ -16,7 +16,7 @@ public class ProgramaC_Alunos {
 	private static final int idade = 0;
 	private static final String cidade = "";
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		FileReader arquivo = null;
 		try {
 			arquivo = new FileReader("data/alunos.csv");
@@ -25,10 +25,11 @@ public class ProgramaC_Alunos {
 			System.exit(1);
 		}
 		ListaEncadeada<Aluno> lista = ListaEncadeada.loadFromFile(arquivo);
-		Aluno busca = new Aluno(name, email, idade, cidade);
+		lista.printObjects();
+		/*Aluno busca = new Aluno(name, email, idade, cidade);
 		System.out.println(lista.search(busca, new SearchByName()));
 		System.out.println(lista.search(busca, new SearchByEmail()));
 		System.out.println(lista.search(busca, new SearchByAgeAndCity()));
-	}
+	*/}
 
 }
