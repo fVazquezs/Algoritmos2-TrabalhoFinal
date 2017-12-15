@@ -11,10 +11,10 @@ import model.Aluno;
 
 public class ProgramaC_Alunos {
 
-	private static final String name = "";
-	private static final String email = "";
-	private static final int idade = 0;
-	private static final String cidade = "";
+	private static final String name = "Nola Hansen";
+	private static final String email = "nolahansen@comvey.com";
+	private static final int idade = 39;
+	private static final String cidade = "Hillsboro";
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		FileReader arquivo = null;
@@ -25,11 +25,11 @@ public class ProgramaC_Alunos {
 			System.exit(1);
 		}
 		ListaEncadeada<Aluno> lista = ListaEncadeada.loadFromFile(arquivo);
-		lista.printObjects();
-		/*Aluno busca = new Aluno(name, email, idade, cidade);
+		//lista.printObjects();
+		Aluno busca = new Aluno(name, email, idade, cidade);
 		System.out.println(lista.search(busca, new SearchByName()));
 		System.out.println(lista.search(busca, new SearchByEmail()));
 		System.out.println(lista.search(busca, new SearchByAgeAndCity()));
-	*/}
+	}
 
 }

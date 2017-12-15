@@ -22,8 +22,11 @@ public class Aluno {
 			this.empresa = empresa;
 			this.cidade = cidade;
 		}
-		public   String getMatricula() {
-			return matricula;
+		public Aluno(String nome, String email, int idade, String cidade) {
+			this.nome = nome;
+			this.email = email;
+			this.idade = idade;
+			this.cidade = cidade;
 		}
 		public   String getNome() {
 			return nome;
@@ -33,12 +36,6 @@ public class Aluno {
 		}
 		public   int getIdade() {
 			return idade;
-		}
-		public   String getSexo() {
-			return sexo;
-		}
-		public   String getEmpresa() {
-			return empresa;
 		}
 		public   String getCidade() {
 			return cidade;

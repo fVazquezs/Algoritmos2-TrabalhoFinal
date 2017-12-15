@@ -68,8 +68,13 @@ public class ListaEncadeada<T> {
 	}
 	public T search(T key, Comparator<T> cmp)
 	{
-		return null;
-	}
+		 ListaEncadeada<T>.no i = head;
+	        while (i != null){
+	            if(cmp.compare(key, i.dado) == 0)
+	                return i.dado;
+	        }
+	        return null;
+	    }
 	public void printObjects(){
 		ListaEncadeada<T>.no i = head;
 		while (i != null){
