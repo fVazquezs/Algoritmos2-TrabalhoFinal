@@ -28,16 +28,16 @@ public class Aluno {
 			this.idade = idade;
 			this.cidade = cidade;
 		}
-		public   String getNome() {
+		public String getNome() {
 			return nome;
 		}
-		public   String getEmail() {
+		public String getEmail() {
 			return email;
 		}
-		public   int getIdade() {
+		public int getIdade() {
 			return idade;
 		}
-		public   String getCidade() {
+		public String getCidade() {
 			return cidade;
 		}
 }

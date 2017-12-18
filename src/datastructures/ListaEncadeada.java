@@ -72,6 +72,7 @@ public class ListaEncadeada<T> {
 	        while (i != null){
 	            if(cmp.compare(key, i.dado) == 0)
 	                return i.dado;
+	            i = i.next;
 	        }
 	        return null;
 	    }

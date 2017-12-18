@@ -12,7 +12,7 @@ import model.Aluno;
 public class ProgramaC_Alunos {
 
 	private static final String name = "Nola Hansen";
-	private static final String email = "nolahansen@comvey.com";
+	private static final String email = "marquezmendez@zillactic.com";
 	private static final int idade = 39;
 	private static final String cidade = "Hillsboro";
 	
@@ -24,8 +24,9 @@ public class ProgramaC_Alunos {
 			e.printStackTrace();
 			System.exit(1);
 		}
+		
 		ListaEncadeada<Aluno> lista = ListaEncadeada.loadFromFile(arquivo);
-		//lista.printObjects();
+		lista.printObjects();
 		Aluno busca = new Aluno(name, email, idade, cidade);
 		System.out.println(lista.search(busca, new SearchByName()));
 		System.out.println(lista.search(busca, new SearchByEmail()));
